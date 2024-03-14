@@ -31,11 +31,12 @@
 
     # Global MIME type for JavaScript files
     AddType text/javascript .js
+    AddType application/javascript .mjs
 </IfModule>
 
 <FilesMatch "\.gz$">
     <IfModule mod_mime.c>
-        # Removing default MIME Type for .gz files allowing to add custom sub-types
+        # Removing default MIME Type for .gz files, allowing to add custom sub-types
         RemoveType gz
 
         # Serve correct content types for gzipped files
@@ -44,24 +45,13 @@
         AddType application/json      json.gz
         AddType text/html             html.gz
         AddType image/svg+xml         svg.gz
-        AddType text/javascript .js
-        AddType application/javascript .mjs
-
-        <IfModule mod_mime.c>
-    # Serve correct encoding type for gzipped files
-    AddEncoding gzip .gz
-
-
-
-
-
 
         # Serve correct content charset for gzipped files
         AddCharset utf-8 .css.gz \
-                         .ics.gz \
-                         .json.gz \
-                         .html.gz \
-                         .svg.gz
+                             .ics.gz \
+                             .json.gz \
+                             .html.gz \
+                             .svg.gz
     </IfModule>
 
     <IfModule mod_headers.c>
