@@ -4,11 +4,11 @@ import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
-import { useLanguage } from "../context/language-context";
+// import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
 
 const HeaderIntro: React.FC = () => {
-  const { language } = useLanguage();
+  // const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -26,9 +26,7 @@ const HeaderIntro: React.FC = () => {
         className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
       />
       <h1>
-        {language === "DE"
-          ? headerIntroData.title.de
-          : headerIntroData.title.en}
+        {headerIntroData.title.en}
           <div className="emoji-container">
         <span className="cat-walk text-7xl">&#128008;</span>
         {/* <span className="shrimp text-7xl">&#127844;</span> */}
@@ -36,16 +34,14 @@ const HeaderIntro: React.FC = () => {
       </h1>
       <h2 className="text-center max-lg:text-5xl max-lg:px-8 text-animation">{headerIntroData.subtitle}</h2>
       <p className="w-1/2 text-center max-lg:hidden">
-        {language === "DE"
-          ? headerIntroData.description.de
-          : headerIntroData.description.en}
+        {headerIntroData.description.en}
       </p>
 
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
-            label={language === "DE" ? button.label.de : button.label.en}
+            label={button.label.en}
             iconSVG={button.icon}
             link={`#${button.name.toLocaleLowerCase()}`}
             buttoncolor={button.color}

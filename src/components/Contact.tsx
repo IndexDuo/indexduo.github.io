@@ -196,9 +196,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             </p>
 
             <h2 className="text-[--black] text-center">
-              {language === "DE"
-                ? contactData.description.de
-                : contactData.description.en}
+              {contactData.description.en}
             </h2>
           </motion.div>
         </div>
@@ -306,9 +304,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               </p>
             </div>
             <p>
-              {language === "DE"
-                ? `${contactData.privacyOptIn.description.de}`
-                : `${contactData.privacyOptIn.description.en}`}
+              {`${contactData.privacyOptIn.description.en}`}
             </p>
             <Button
               value={
