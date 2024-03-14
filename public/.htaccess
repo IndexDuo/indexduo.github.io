@@ -17,46 +17,44 @@
 #     https://httpd.apache.org/docs/current/mod/mod_mime.html#removetype
 
 <IfModule mod_rewrite.c>
-
     RewriteCond %{HTTP:Accept-Encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -f
     RewriteRule \.(css|ics|js|json|html|svg)$ %{REQUEST_URI}.gz [L]
 
     # Prevent mod_deflate double gzip
     RewriteRule \.gz$ - [E=no-gzip:1]
+</IfModule>
 
-    <FilesMatch "\.gz$">
+<IfModule mod_mime.c>
+    # Serve correct encoding type for gzipped files
+    AddEncoding gzip .gz
 
-        <IfModule mod_mime.c>
-            # (1)
-            RemoveType gz
+    # Global MIME type for JavaScript files
+    AddType text/javascript .js
+</IfModule>
 
-            # Serve correct content types
-            AddType text/css              css.gz
-            AddType text/calendar         ics.gz
-            AddType text/javascript       js.gz
-            AddType application/json      json.gz
-            AddType text/html             html.gz
-            AddType text/javascript .js
-            AddType image/svg+xml         svg.gz
-
-            # Serve correct content charset
-            AddCharset utf-8 .css.gz \
-                             .ics.gz \
-                             .js.gz \
-                             .json.gz
-        </IfModule>
-
-        <IfModule mod_headers.c>
-            # Force proxies to cache gzipped and non-gzipped files separately
-            Header append Vary Accept-Encoding
-        </IfModule>
-
-    </FilesMatch>
-
+<FilesMatch "\.gz$">
     <IfModule mod_mime.c>
-        # Serve correct encoding type
-        AddEncoding gzip .gz
+        # Removing default MIME Type for .gz files allowing to add custom sub-types
+        RemoveType gz
+
+        # Serve correct content types for gzipped files
+        AddType text/css              css.gz
+        AddType text/calendar         ics.gz
+        AddType application/json      json.gz
+        AddType text/html             html.gz
+        AddType image/svg+xml         svg.gz
+
+        # Serve correct content charset for gzipped files
+        AddCharset utf-8 .css.gz \
+                         .ics.gz \
+                         .json.gz \
+                         .html.gz \
+                         .svg.gz
     </IfModule>
 
-</IfModule>
+    <IfModule mod_headers.c>
+        # Force proxies to cache gzipped and non-gzipped files separately
+        Header append Vary Accept-Encoding
+    </IfModule>
+</FilesMatch>
