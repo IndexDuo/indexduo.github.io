@@ -39,19 +39,17 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    en: "Hi, I'm Jing",
   },
-  subtitle: "Fullstack Developer ",
+  roles: [" Web Designer.", " UI/UX Designer.", " student.", "n orange."],
+  subtitle:"Web Designer",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience.",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +58,6 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -334,13 +331,14 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    de: '',
+    en: `"Design isn't just what it looks like and feels like — design is how it works"`,
+    author: "Steve Jobs, co-founder of Apple",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '""',
+    en: `"A user interface is like a joke. If you have to explain it, it’s not that good."`,
+    author: "Martin LeBlanc, CEO and founder of IconFinder",
   },
 ] as const;
 

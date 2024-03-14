@@ -29,9 +29,12 @@ const HeaderIntro: React.FC = () => {
         {language === "DE"
           ? headerIntroData.title.de
           : headerIntroData.title.en}
-        <span className="wave text-7xl">&#128075;&#127997;</span>
+          <div className="emoji-container">
+        <span className="cat-walk text-7xl">&#128008;</span>
+        {/* <span className="shrimp text-7xl">&#127844;</span> */}
+        </div>
       </h1>
-      <h2>{headerIntroData.subtitle}</h2>
+      <h2 className="text-center max-lg:text-5xl max-lg:px-8 text-animation">{headerIntroData.subtitle}</h2>
       <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de

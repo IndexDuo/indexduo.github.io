@@ -476,6 +476,47 @@ a {
   }
 }
 
+.emoji-container {
+  position: relative; /* Ensures contained emojis are positioned in relation to this container */
+  display: inline-block; /* Ensures the container only takes up as much space as the emojis inside */
+}
+
+.cat-walk {
+  animation-name: cat-walk-animation;
+  animation-duration: 8s; /* Adjust duration to make the animation faster or slower */
+  animation-iteration-count: infinite;
+  display: inline-block;
+  transform-origin: 50% 50%; /* Ensure the flip transformation is centered */
+}
+
+@keyframes cat-walk-animation {
+  0%, 100% {
+    transform: translateX(0) scaleX(1); /* Start and end at the original position, facing original direction */
+  }
+  5%{
+    transform: translateX(0) scaleX(-1); /* Flip the cat at the start of the animation */
+  }
+  25% {
+    transform: translateX(70%) scaleX(-1); /* Move to the right, facing original direction */
+  }
+  50% {
+    transform: translateX(150%) scaleX(-1); /* At the halfway point, flip and finish moving to the right */
+  }
+  55% {
+    transform: translateX(150%) scaleX(1); /* Flip the cat at the end of the animation */
+  }
+  75% {
+    transform: translateX(75%) scaleX(1); /* Move back to the left, facing original direction */
+  }
+}
+
+.shrimp {
+  display: inline-block;
+  position: relative;
+  left: 72px; /* Adjust this value to move the shrimp further to the right */
+}
+
+
 .popup-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
@@ -502,4 +543,34 @@ a {
 .popup-content {
   animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
   -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+
+/* Typing effect */
+
+
+.typing-effect {
+  border-right: .15em solid orange; /* The typewriter cursor */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+
+.text-animation {
+  background: linear-gradient(to right, var(--lightblue) 20%, var(--orange) 40%, var(--lightblue) 70%, var(--orange) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
 }
