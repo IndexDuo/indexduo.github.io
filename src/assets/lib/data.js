@@ -294,8 +294,8 @@ export const FooterLinks = [
     { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: _jsx(Privacy, {}) },
 ];
 export const sideBarRightMail = {
-    link: "mailto:myemail@com",
-    text: "myemail@com",
+    link: "mailto:jl.jing02123@gmail.com",
+    text: "jl.jing02123@gmail.com",
 };
 export const sideBarLeftSocials = [
     {
