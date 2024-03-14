@@ -37,6 +37,7 @@
             AddType text/javascript       js.gz
             AddType application/json      json.gz
             AddType text/html             html.gz
+            AddType text/javascript .js
             AddType image/svg+xml         svg.gz
 
             # Serve correct content charset
