@@ -1,0 +1,22 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { lazy, Suspense } from "react";
+import Layout from "../layout/layout";
+import Footer from "../components/Footer";
+import ThemeSwitch from "../components/theme-switch";
+import { useTheme } from "../context/theme-context";
+import { ScrollProgress } from "../components/ScrollProgress";
+import Divider from "../components/Divider";
+import ProjectSlider from "../components/ProjectSlider";
+const LazyBannerQuote = lazy(() => import("../components/BannerQuote"));
+const LazySiteBarRight = lazy(() => import("../components/SideBarRight"));
+const LazySiteBarLeft = lazy(() => import("../components/SiteBarLeft"));
+const LazyTechStack = lazy(() => import("../components/TechStack"));
+const LazyAboutMe = lazy(() => import("../components/AboutMe"));
+const LazyContact = lazy(() => import("../components/Contact"));
+const LazyHeaderIntro = lazy(() => import("../components/HeaderIntro"));
+const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
+const Home = () => {
+    const { theme } = useTheme();
+    return (_jsx(_Fragment, { children: _jsxs(Layout, { children: [_jsx(ThemeSwitch, {}), _jsxs("header", { className: "h-screen", children: [_jsx(ScrollProgress, { position: "left", color: "orange", height: 10, smoothness: true }), _jsxs(Suspense, { fallback: _jsx("div", { children: "Loading..." }), children: [_jsx(LazySiteBarLeft, {}), _jsx(LazyHeaderIntro, {}), _jsx(LazySiteBarRight, {})] })] }), _jsx("main", { className: "relative", children: _jsxs(Suspense, { fallback: _jsx("div", { children: "Loading..." }), children: [_jsx(LazyBannerQuote, { style: "withBG", quoteIndex: 0, containerType: "quote" }), _jsx(Divider, { thickness: "0.25rem", direction: "outer-right-to-inner-left", color: "lightblue", height: "small", dividerStyle: "solid" }), _jsx(LazyTechStack, {}), _jsx(Divider, { thickness: "0.25rem", direction: "inner-right-to-middle", color: "lightblue", height: "middle", dividerStyle: "solid" }), _jsx(LazyBannerQuote, { style: "noBG", quoteIndex: 1, containerType: "statement" }), _jsx(Divider, { thickness: "0.25rem", direction: "middle", color: "lightblue", height: "extraLarge", dividerStyle: "solid" }), _jsx(ProjectSlider, {}), _jsxs("div", { className: "relative -mb-24 pb-32 -mt-10", children: [_jsx(LazyRadialGradient, { opacity: theme === "light" ? "opacity-30" : "opacity-30", scale: "scale-y-100", position: "-top-24" }), _jsx(Divider, { thickness: "0.25rem", direction: "middle-to-inner-left", color: "lightblue", height: "middle", dividerStyle: "solid" }), _jsx(LazyAboutMe, {}), _jsx(Divider, { thickness: "0.25rem", direction: "inner-left-to-middle", color: "lightblue", height: "middle", dividerStyle: "solid" }), _jsx(LazyContact, {})] })] }) }), _jsx(Footer, {})] }) }));
+};
+export default Home;

@@ -1,0 +1,71 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { navLinks } from "../assets/lib/data";
+import ScrollToAnchor from "./Listener";
+import { useActiveSectionContext } from "../context/active-section-context";
+import { useTheme } from "../context/theme-context";
+import { useLanguage } from "../context/language-context";
+import LanguageSwitch from "./LanguageSwitch";
+const NavBar = () => {
+    const { theme } = useTheme();
+    const { language } = useLanguage();
+    const [isSticky, setIsSticky] = useState(false);
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+    const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const threshold = window.outerHeight * 0.1;
+            setIsSticky(scrollY >= threshold);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 1024) {
+                setIsMobileMenuActive(true);
+                setIsSticky(false);
+            }
+            else {
+                setIsMobileMenuActive(false);
+                setIsSticky(true);
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    const CustomNavLink = ({ link, children, linkEn, }) => {
+        const [isHovered, setIsHovered] = useState(false);
+        const isLinkActive = isHovered || linkEn === activeSection;
+        const linkClasses = isLinkActive
+            ? "transition-all duration-200 relative"
+            : "opacity-20 transition-all duration-700";
+        const leftArrow = isLinkActive && (_jsx("span", { className: "text-[--orange] absolute -left-5 top-0 max-lg:hidden", children: "<" }));
+        const rightArrow = isLinkActive && (_jsx("span", { className: "text-[--orange] absolute top-0 -right-10 max-lg:hidden", children: "/>" }));
+        return (_jsx(NavLink, { to: link, onMouseEnter: () => setIsHovered(true), onMouseLeave: () => setIsHovered(false), className: `relative ${linkClasses}`, "aria-aria-current": link, children: _jsxs("span", { children: [leftArrow, children, rightArrow] }) }));
+    };
+    return (_jsxs(React.Fragment, { children: [_jsx(ScrollToAnchor, {}), !isMobileMenuActive && (_jsx("nav", { className: `max-lg:hidden flex-row flex justify-center items-center gap-24 font-semibold p-5 top-0 ${isSticky && !isMobileMenuActive
+                    ? `sticky top-10 z-50 ml-auto mr-auto  w-max  px-16 py-5 transition-all ease-in-out duration-100 rounded-full border border-white border-opacity-40  bg-opacity-70 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${theme === "dark" ? "bg-darkblue" : "bg-white"}`
+                    : ""}
+   `, children: navLinks.map((link, index) => (_jsx(CustomNavLink, { link: link.hash, linkEn: link.en, children: link.en === activeSection ? (_jsxs("div", { children: [_jsx("span", { className: "text-[--orange] absolute -left-5 top-0", children: "<" }), language === "DE" ? link.de : link.en] })) : (_jsx("div", { onClick: () => {
+                            setActiveSection(link.en);
+                            setTimeOfLastClick(Date.now());
+                        }, children: language === "DE" ? link.de : link.en })) }, index))) })), isMobileMenuActive && (_jsxs("nav", { className: ` max-lg:flex w-[100vw] flex-row justify-between fixed bottom-0 left-0 z-50 bg-darkblue p-10  text-center items-center transition-all ease-in-out duration-100 rounded-t-3xl bg-opacity-100 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ${theme === "dark" ? "bg-darkblue" : "bg-white"}`, children: [navLinks.map((link, mobileIndex) => (_jsx(CustomNavLink, { link: link.hash, linkEn: link.en, children: link.en === activeSection ? (_jsx("div", { className: "text-[3.2rem] flex flex-col items-center", children: _jsx(link.icon, {}) })) : (_jsx("div", { className: "text-[2rem] flex flex-col items-center ", onClick: () => {
+                                setActiveSection(link.en);
+                                setTimeOfLastClick(Date.now());
+                                if (link.en === "Home") {
+                                    document.body.scrollIntoView({
+                                        behavior: "smooth",
+                                        block: "start",
+                                    });
+                                }
+                            }, children: _jsx(link.icon, {}) })) }, mobileIndex))), _jsx(LanguageSwitch, {})] }))] }));
+};
+export default NavBar;
