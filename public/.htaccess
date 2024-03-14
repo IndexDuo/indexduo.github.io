@@ -44,6 +44,17 @@
         AddType application/json      json.gz
         AddType text/html             html.gz
         AddType image/svg+xml         svg.gz
+        AddType text/javascript .js
+        AddType application/javascript .mjs
+
+        <IfModule mod_mime.c>
+    # Serve correct encoding type for gzipped files
+    AddEncoding gzip .gz
+
+
+
+
+
 
         # Serve correct content charset for gzipped files
         AddCharset utf-8 .css.gz \
