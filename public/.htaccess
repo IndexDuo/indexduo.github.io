@@ -33,6 +33,7 @@
     AddType text/javascript .js
     AddType application/javascript .mjs
     AddType text/javascript js mjs
+    
 </IfModule>
 
 <FilesMatch "\.gz$">
