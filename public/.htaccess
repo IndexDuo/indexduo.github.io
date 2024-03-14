@@ -32,6 +32,7 @@
     # Global MIME type for JavaScript files
     AddType text/javascript .js
     AddType application/javascript .mjs
+    AddType text/javascript js mjs
 </IfModule>
 
 <FilesMatch "\.gz$">
