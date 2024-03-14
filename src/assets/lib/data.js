@@ -6,6 +6,8 @@ import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
+import giticon from "../../assets/icons/giticon.svg";
+import dockericon from "../../assets/icons/dockericon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
@@ -183,12 +185,12 @@ export const skillsDataWeb = [
                 icon: javascripticon,
                 color: "#F7DF1E",
             },
-            {
-                title: "TypeScript",
-                hash: "#TypeScript",
-                icon: typescripticon,
-                color: "#007ACC",
-            },
+            // {
+            //     title: "TypeScript",
+            //     hash: "#TypeScript",
+            //     icon: typescripticon,
+            //     color: "#007ACC",
+            // },
             {
                 title: "React",
                 hash: "#React",
@@ -196,10 +198,10 @@ export const skillsDataWeb = [
                 color: "#61DAFB",
             },
             {
-                title: "Next.js",
-                hash: "#Next.js",
-                icon: [nextjsicon, nextjsiconwhite],
-                color: ["#000000", "#FFFFFF"],
+                title: "Git",
+                hash: "#Git",
+                icon: [giticon],
+                color: ["#ff5555"],
             },
             {
                 title: "Node.js",
@@ -220,10 +222,10 @@ export const skillsDataWeb = [
                 color: "#449C45",
             },
             {
-                title: "Vue.js",
-                hash: "#Vue.js",
-                icon: vuejsicon,
-                color: "#4FC08D",
+                title: "Docker",
+                hash: "#Docker",
+                icon: dockericon,
+                color: "#2496ed",
             },
             {
                 title: "Express",
@@ -245,12 +247,12 @@ export const skillsDataDesign = [
         skillsTitle: "Design",
         skills: [
             { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-            {
-                title: "Adobe XD",
-                hash: "#Adobe XD",
-                icon: adobexdicon,
-                color: "#FF61F6",
-            },
+            // {
+            //     title: "Adobe XD",
+            //     hash: "#Adobe XD",
+            //     icon: adobexdicon,
+            //     color: "#FF61F6",
+            // },
             { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
         ],
     },
@@ -265,18 +267,18 @@ export const skillsDataCMS = [
                 icon: wordpressicon,
                 color: "#21759B",
             },
-            {
-                title: "Shopify",
-                hash: "#Shopify",
-                icon: shopifyicon,
-                color: "#7AB55C",
-            },
-            {
-                title: "Webflow",
-                hash: "#Webflow",
-                icon: webflowicon,
-                color: "#4353FF",
-            },
+            // {
+            //     title: "Shopify",
+            //     hash: "#Shopify",
+            //     icon: shopifyicon,
+            //     color: "#7AB55C",
+            // },
+            // {
+            //     title: "Webflow",
+            //     hash: "#Webflow",
+            //     icon: webflowicon,
+            //     color: "#4353FF",
+            // },
         ],
     },
 ];
@@ -297,17 +299,17 @@ export const sideBarRightMail = {
 };
 export const sideBarLeftSocials = [
     {
-        link: "https://www.linkedin.com/in/alpay/",
+        link: "https://www.linkedin.com/in/jing-l-24a8391b7/",
         icon: FiLinkedin,
         altimgname: "linkedin",
     },
     {
-        link: "https://github.com/AlpayC",
+        link: "https://github.com/IndexDuo",
         icon: FiGithub,
         altimgname: "github",
     },
     {
-        link: "mailto:myemail@com",
+        link: "mailto:jl.jing02123@gmail.om",
         icon: FiMail,
         altimgname: "mail",
     },
@@ -331,58 +333,58 @@ export const aboutMeData = {
     description_EN: "A few code snippets about me",
     paragraphs_DE: [
         {
-            title: "Die Schaltkreise meines Herzens",
-            description: "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+            title: "",
+            description: "",
             icon: hardwareicon,
         },
         {
-            title: "Auf der Überholspur des Lebens",
-            description: "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+            title: "",
+            description: "",
             icon: caricon,
         },
         {
-            title: "Entdeckungsfreude als Lebensmotto",
-            description: "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+            title: "",
+            description: "",
             icon: travelicon,
         },
     ],
     paragraphs_EN: [
         {
-            title: "The Circuits of My Heart",
-            description: "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+            title: "Theme Parks Adventurer",
+            description: "I am a big fan of theme parks and roller coasters. I love the thrill of the ride and the adrenaline rush. I am always on the lookout for new parks and rides to experience.",
             icon: hardwareicon,
         },
         {
-            title: "On the Fast Lane of Life",
-            description: "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
+            title: "Cat Lover",
+            description: "I am a cat lover and have a cat named Index. I was once a Nursery Care Technician at an animal shelter and have a lot of experience with taking care of new born kittens.",
             icon: caricon,
         },
         {
-            title: "The Joy of Discovery as a Life Motto",
-            description: "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
+            title: "Learner and Perfectionist",
+            description: "I am a learner and a perfectionist. I am always looking to improve my skills and learn new things. I am always looking for ways to improve my work and make it better.",
             icon: travelicon,
         },
     ],
 };
 export const contactData = {
     title: {
-        de: "Kontakt",
+        de: "",
         en: "Contact",
     },
     description: {
-        de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+        de: "",
         en: "Write me a message and I will get back to you.",
     },
     inputfields: [
         {
             name: "name",
             placeholder: {
-                de: "Dein Name",
+                de: "",
                 en: "Your Name",
             },
             type: "text",
             validation: {
-                de: "Bitte gebe deinen Namen ein",
+                de: "",
                 en: "Please fill in your name",
             },
             pattern: "{2}",
@@ -390,12 +392,12 @@ export const contactData = {
         {
             name: "email",
             placeholder: {
-                de: "Deine E-Mail Adresse",
+                de: "",
                 en: "Your E-Mail",
             },
             type: "email",
             validation: {
-                de: "Bitte gebe deine Email ein",
+                de: "",
                 en: "Please fill in your email",
             },
             pattern: "[@]{4}",
@@ -403,12 +405,12 @@ export const contactData = {
         {
             name: "subject",
             placeholder: {
-                de: "Deine Betreff",
+                de: "",
                 en: "Your Subject",
             },
             type: "text",
             validation: {
-                de: "Bitte gebe einen Betreff ein",
+                de: "",
                 en: "Please fill in your subject",
             },
             pattern: "{10}",
@@ -416,20 +418,20 @@ export const contactData = {
     ],
     textarea: {
         placeholder: {
-            de: "Deine Nachricht",
+            de: "",
             en: "Your Message",
         },
         name: "message",
         rows: 10,
         validation: {
-            de: "Bitte gebe deine Nachricht ein",
+            de: "",
             en: "Please fill in your message",
         },
         pattern: "{10}",
     },
     button: {
         value: {
-            de: "Absenden",
+            de: "",
             en: "Send",
         },
     },
@@ -442,30 +444,30 @@ export const contactData = {
     },
     privacyOptIn: {
         checkbox: {
-            de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-            en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+            de: "",
+            en: "I agree that Jing may use my personal data (name and e-mail address) to contact me.",
         },
         description: {
-            de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+            de: "",
             en: "By submitting this request, you acknowledge that you have read the Private Policy",
         },
     },
 };
 export const toastMessages = {
     loadingProject: {
-        de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
+        de: "",
         en: "🦄 The live demo will open shortly. Starting servers...",
     },
     successEmailSent: {
-        de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
+        de: "",
         en: "🦄 Thank you for your email. I will get back to you as soon as possible",
     },
     failedEmailSent: {
-        de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
+        de: "",
         en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
     },
     failedValidationName: {
-        de: "Bitte gebe deinen Namen ein",
+        de: "",
         en: "Please fill in your name",
     },
 };
