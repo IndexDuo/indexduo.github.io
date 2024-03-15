@@ -7,6 +7,7 @@ import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import giticon from "../../assets/icons/giticon.svg";
+import postmanicon from "../../assets/icons/postmanicon.svg";
 import dockericon from "../../assets/icons/dockericon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
@@ -26,6 +27,9 @@ import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
+import flotto_mockup from "../../assets/img/flotto_mockup.png";
+import eventcountdown_mockup from "../../assets/img/eventcountdown_mockup.png";
+import fbi_mockup from "../../assets/img/fbi_mockup.png";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
@@ -70,23 +74,20 @@ export const headerIntroData = {
 };
 export const projectsData = [
     {
-        title: "Tasty App",
-        description: "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
-        description_EN: "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+        title: "FBI Most Wanted",
+        description: "",
+        description_EN: "A web application that allows users to search for FBI's most wanted criminals. The app uses the FBI's public API to fetch the data and display it in a user-friendly way. The app is made at ShellHacks 2023.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
             { name: "JavaScript", icon: javascripticon },
             { name: "REST Api", icon: apiicon },
-            { name: "React", icon: reacticon },
-            { name: "Figma", icon: figmaicon },
-            { name: "Canva", icon: canvaicon },
-            { name: "Netlify", icon: netlifyicon },
-            { name: "Trello", icon: trelloicon },
+            { name: "node.js", icon: nodejsicon },
+            { name: "Express", icon: expressiconwhite },
         ],
-        image: tastyMockup,
+        image: fbi_mockup,
         deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-        githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+        githuburl: "https://github.com/IndexDuo/FBI-Most-Wanted",
         githubicon: FiGithub,
         deploymenticon: FiLink,
         colors: {
@@ -97,26 +98,19 @@ export const projectsData = [
         },
     },
     {
-        title: "Silentmoon",
-        description: "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
-        description_EN: "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+        title: "Event Countdown App",
+        description: "",
+        description_EN: "A web application made with React-Native that allows the user to create a countdown for events and store the data locally. The user can also use it as a to-do list, but different from a to-do list, it tracks the countdown of upcoming events and to-do “items” and provides the user a visual representation of how much time is left until either an event occurs.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
             { name: "JavaScript", icon: javascripticon },
-            { name: "Spotify Api", icon: spotifyicon },
             { name: "React", icon: reacticon },
-            { name: "JWT & Bcrypt", icon: jwticon },
-            { name: "Axios", icon: axiosicon },
-            { name: "MongoDB", icon: mongodbicon },
-            { name: "Express", icon: expressiconwhite },
-            { name: "Node.js", icon: nodejsicon },
-            { name: "Figma", icon: figmaicon },
-            { name: "Render", icon: rendericon },
+            { name: "React-Native", icon: reacticon },
         ],
-        image: silentmoonMockup,
-        deploymenturl: "https://silentmoon-grpw.onrender.com/",
-        githuburl: "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+        image: eventcountdown_mockup,
+        deploymenturl: "https://indexduo.github.io/event-countdown/",
+        githuburl: "https://github.com/IndexDuo/event-countdown",
         githubicon: FiGithub,
         deploymenticon: FiLink,
         colors: {
@@ -127,26 +121,24 @@ export const projectsData = [
         },
     },
     {
-        title: "Furniture Organizer",
-        description: "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
-        description_EN: "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+        title: "Flotto",
+        description: "",
+        description_EN: "A Florida Lottery web application that allows users to search for the latest lottery numbers and jackpot amounts. Data was extracted from the Florida Lottery's official website, stored in a MongoDB database, and displayed in a user-friendly way. The app is made at KnightHacks 2023.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
             { name: "JavaScript", icon: javascripticon },
-            { name: "React", icon: reacticon },
-            { name: "JWT & Bcrypt", icon: jwticon },
-            { name: "Axios", icon: axiosicon },
             { name: "MongoDB", icon: mongodbicon },
+            {name:"postman", icon:postmanicon},
             { name: "Express", icon: expressiconwhite },
             { name: "Node.js", icon: nodejsicon },
-            { name: "Figma", icon: figmaicon },
-            { name: "Render", icon: rendericon },
-            { name: "Trello", icon: trelloicon },
+            { name: "REST Api", icon: apiicon },
+            {name:"git", icon:giticon},
+            {name:"tailwindcss", icon:tailwindcssicon},
         ],
-        image: instorMockup,
-        deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-        githuburl: "https://github.com/AlpayC/Furniture_MERN",
+        image: flotto_mockup,
+        deploymenturl: "",
+        githuburl: "https://github.com/IndexDuo/Flotto",
         githubicon: FiGithub,
         deploymenticon: FiLink,
         colors: {
@@ -200,7 +192,7 @@ export const skillsDataWeb = [
             {
                 title: "Git",
                 hash: "#Git",
-                icon: [giticon],
+                icon: giticon,
                 color: ["#ff5555"],
             },
             {
@@ -233,6 +225,7 @@ export const skillsDataWeb = [
                 icon: [expressicon, expressiconwhite],
                 color: ["#000000", "#FFFFFF"],
             },
+            {title:"Postman", hash:"#Postman", icon:postmanicon, color:"#FF6C37"},
             {
                 title: "SASS/SCSS",
                 hash: "#SASS/SCSS",
