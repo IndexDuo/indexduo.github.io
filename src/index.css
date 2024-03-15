@@ -329,6 +329,12 @@ a {
   transition: all 0.375s;
 }
 
+/* hide langauge switch since i dont need it yet */
+
+.language-switch-container {
+  display: none;
+}
+
 .language-switch-container .tgl {
   display: none;
 }
