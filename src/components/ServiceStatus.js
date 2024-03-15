@@ -39,6 +39,6 @@ const ServiceStatus = () => {
         }
         getStatusData();
     }, []);
-    return (_jsx(React.Fragment, { children: _jsx(Link, { to: "https://status.alpaycelik.dev", children: _jsxs("div", { className: "status p-4 rounded-xl flex flex-row items-center", children: [_jsxs("div", { className: "status-icon w-[2rem] h-[2rem] rounded-3xl relative mr-4", children: [_jsx("div", { className: `status-icon-inner absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 ${iconColor()} rounded-[inherit]` }), _jsx("div", { className: `status-icon-wave  w-[inherit] h-[inherit] rounded-[inherit] ${iconColor()}   animate-ping ` })] }), _jsxs("p", { className: `status-text ${statusColor()} `, children: ["Status: ", status] })] }) }) }));
+    return (_jsx(React.Fragment, { children: _jsx(Link, { to: "https://status.indexduo.me", children: _jsxs("div", { className: "status p-4 rounded-xl flex flex-row items-center", children: [_jsxs("div", { className: "status-icon w-[2rem] h-[2rem] rounded-3xl relative mr-4", children: [_jsx("div", { className: `status-icon-inner absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 ${iconColor()} rounded-[inherit]` }), _jsx("div", { className: `status-icon-wave  w-[inherit] h-[inherit] rounded-[inherit] ${iconColor()}   animate-ping ` })] }), _jsxs("p", { className: `status-text ${statusColor()} `, children: ["Status: ", status] })] }) }) }));
 };
 export default ServiceStatus;
