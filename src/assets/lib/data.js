@@ -86,7 +86,7 @@ export const projectsData = [
             { name: "Express", icon: expressiconwhite },
         ],
         image: fbi_mockup,
-        deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+        // deploymenturl: "",
         githuburl: "https://github.com/IndexDuo/FBI-Most-Wanted",
         githubicon: FiGithub,
         deploymenticon: FiLink,
@@ -137,7 +137,7 @@ export const projectsData = [
             {name:"tailwindcss", icon:tailwindcssicon},
         ],
         image: flotto_mockup,
-        deploymenturl: "",
+        // deploymenturl: "",
         githuburl: "https://github.com/IndexDuo/Flotto",
         githubicon: FiGithub,
         deploymenticon: FiLink,
@@ -449,7 +449,7 @@ export const contactData = {
 export const toastMessages = {
     loadingProject: {
         de: "",
-        en: "🦄 The live demo will open shortly. Starting servers...",
+        en: "🦄 The live demo may not be available at this time... Feel free to check out the project on Github!",
     },
     successEmailSent: {
         de: "",
