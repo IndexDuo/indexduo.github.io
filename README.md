@@ -2,8 +2,6 @@
 
 Welcome to my portfolio! Hi, I'm Jing, a Web Designer, UI/UX Designer, and student. I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience.
 
-![Jing's Profile Picture](profilepicture)
-
 ## Featured Projects
 
 ### FBI Most Wanted
