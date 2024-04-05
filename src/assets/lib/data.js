@@ -28,6 +28,7 @@ import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
 import flotto_mockup from "../../assets/img/flotto_mockup.png";
+import gallery_mockup from "../../assets/img/gallery_mockup.png";
 import eventcountdown_mockup from "../../assets/img/eventcountdown_mockup.png";
 import fbi_mockup from "../../assets/img/fbi_mockup.png";
 import vercelicon from "../../assets/icons/vercelicon.svg";
@@ -149,6 +150,27 @@ export const projectsData = [
             projectcolor: "#E3964A",
         },
     },
+    {
+        title: "Art Gallery Website",
+        description: "",
+        description_EN: "A visually engaging website showcasing a collection of artworks. Designed to provide an immersive art gallery experience online.",
+        technologies: [
+            { name: "Html", icon: htmlicon },
+            { name: "CSS", icon: cssicon }
+        ],
+        image: gallery_mockup, // Replace this with the path to your project's screenshot
+        deploymenturl: "https://indexduo.me/ArtGalleryWebsite/",
+        githuburl: "https://github.com/IndexDuo/ArtGalleryWebsite", // Update this with the correct GitHub repository if available
+        githubicon: FiGithub,
+        deploymenticon: FiLink,
+        colors: {
+            main: "main-btn",
+            second: "secondary-btn",
+            icon: "white",
+            projectcolor: "#Insert_Color_Theme_of_Your_Project_Here", // Optional: Replace this with your project's primary color theme
+        },
+    }
+    
 ];
 export const liveTickerData = {
     content: {
