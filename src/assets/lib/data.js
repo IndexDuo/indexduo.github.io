@@ -30,6 +30,7 @@ import webflowicon from "../../assets/icons/webflowicon.svg";
 import flotto_mockup from "../../assets/img/flotto_mockup.png";
 import eventcountdown_mockup from "../../assets/img/eventcountdown_mockup.png";
 import fbi_mockup from "../../assets/img/fbi_mockup.png";
+import vercelicon from "../../assets/icons/vercelicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
@@ -83,10 +84,10 @@ export const projectsData = [
             { name: "JavaScript", icon: javascripticon },
             { name: "REST Api", icon: apiicon },
             { name: "node.js", icon: nodejsicon },
-            { name: "Express", icon: expressiconwhite },
+            { name: "Vercel", icon: vercelicon },
         ],
         image: fbi_mockup,
-        // deploymenturl: "",
+        deploymenturl: "https://fbi-most-wanted-acqz9h0xy-jing-lis-projects-3c001a2a.vercel.app/",
         githuburl: "https://github.com/IndexDuo/FBI-Most-Wanted",
         githubicon: FiGithub,
         deploymenticon: FiLink,
