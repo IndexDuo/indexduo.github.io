@@ -88,7 +88,7 @@ export const projectsData = [
             { name: "Vercel", icon: vercelicon },
         ],
         image: fbi_mockup,
-        deploymenturl: "https://fbi-most-wanted-acqz9h0xy-jing-lis-projects-3c001a2a.vercel.app/",
+        deploymenturl: "https://fbi-most-wanted-mu.vercel.app/",
         githuburl: "https://github.com/IndexDuo/FBI-Most-Wanted",
         githubicon: FiGithub,
         deploymenticon: FiLink,
