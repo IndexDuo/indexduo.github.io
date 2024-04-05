@@ -7,7 +7,7 @@ Welcome to my portfolio! Hi, I'm Jing, a Web Designer, UI/UX Designer, and stude
 ### FBI Most Wanted
 - **Description**: A web application that allows users to search for FBI's most wanted criminals using the FBI's public API. Made at ShellHacks 2023.
 - **Technologies**: HTML, CSS, JavaScript, REST API, Node.js, Vercel
-- **[View Project](https://fbi-most-wanted-acqz9h0xy-jing-lis-projects-3c001a2a.vercel.app/)** | **[GitHub](https://github.com/IndexDuo/FBI-Most-Wanted)**
+- **[View Project](https://fbi-most-wanted-mu.vercel.app/)** | **[GitHub](https://github.com/IndexDuo/FBI-Most-Wanted)**
 
 ### Event Countdown App
 - **Description**: A React-Native web application for creating event countdowns and to-do lists with a visual representation of time left. 
