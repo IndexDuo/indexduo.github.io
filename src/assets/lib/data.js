@@ -31,6 +31,7 @@ import flotto_mockup from "../../assets/img/flotto_mockup.png";
 import gallery_mockup from "../../assets/img/gallery_mockup.png";
 import eventcountdown_mockup from "../../assets/img/eventcountdown_mockup.png";
 import fbi_mockup from "../../assets/img/fbi_mockup.png";
+import biasguessr_mockup from "../../assets/img/biasguessr._mockup.png";
 import vercelicon from "../../assets/icons/vercelicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
@@ -74,7 +75,32 @@ export const headerIntroData = {
     ],
     profilepicture: profilepicture,
 };
-export const projectsData = [
+export const projectsData = [{
+    title: "BiasGuessr",
+    description: "",
+    description_EN: "Guess the K-POP (or western) artists with your voice. A web app that allows users to a play a game of guess the celebrity. It uses voice recognition to detect the right spoken answer. There are two game modes, one for K-POP fans and one for those that aren't, which instead tests on western celebrities. Play the game using the demo link below. Mobile recommended!",
+    technologies: [{ name: "React", icon: reacticon },
+        { name: "Html", icon: htmlicon },
+        { name: "CSS", icon: cssicon },
+        { name: "JavaScript", icon: javascripticon },
+        { name: "REST Api", icon: apiicon },
+        { name: "node.js", icon: nodejsicon }, { name: "MongoDB", icon: mongodbicon },
+        {name:"postman", icon:postmanicon},
+        { name: "Express", icon: expressiconwhite },
+        { name: "Vercel", icon: vercelicon },
+    ],
+    image: biasguessr_mockup,
+    deploymenturl: "https://www.biasguessr.co/",
+    githuburl: "https://github.com/IndexDuo/WingHacks2024",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+        main: "main-btn",
+        second: "secondary-btn",
+        icon: "white",
+        projectcolor: "#70B9BE",
+    },
+},
     {
         title: "FBI Most Wanted",
         description: "",
