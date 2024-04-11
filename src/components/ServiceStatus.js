@@ -11,7 +11,7 @@ const ServiceStatus = () => {
     useEffect(() => {
         async function getStatusData() {
             try {
-                const apiUrl = import.meta.env.VITE_API_BASE_URL||'http://localhost:3000'; // Fallback URL
+                const apiUrl = 'https://www.indexduo.me'; // Fallback URL
                 const response = await axios.get(`${apiUrl}/api/status`);
 
                 const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
