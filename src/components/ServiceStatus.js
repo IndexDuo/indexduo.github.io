@@ -16,6 +16,7 @@ const ServiceStatus = () => {
                 console.log(response.data);
                 const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
                 setStatus(statusPageData);
+                console.log(statusPageData)
                 // console.log(statusPageData)
             } catch (error) {
                 console.error("Failed to get status from backend:", error);
