@@ -13,7 +13,7 @@ const ServiceStatus = () => {
             try {
                 const apiUrl = 'https://www.indexduo.me'; // Fallback URL
                 const response = await axios.get(`${apiUrl}/api/status`);
-
+                console.log(response.data);
                 const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
                 setStatus(statusPageData);
                 // console.log(statusPageData)
