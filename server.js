@@ -2,6 +2,8 @@
 import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
+import process from 'process';
+
 dotenv.config();
 
 const app = express();
