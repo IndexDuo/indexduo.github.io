@@ -13,11 +13,11 @@ const ServiceStatus = () => {
             try {
                 const apiUrl = 'https://www.indexduo.me'; // Fallback URL
                 const response = await axios.get(`${apiUrl}/api/status`);
-                console.log(response.data);
+                // console.log(response.data);
                 const statusPageData = response.data.data[0].attributes.aggregate_state;
-                console.log(statusPageData)
+                // console.log(statusPageData)
                 setStatus(statusPageData);
-                console.log(statusPageData)
+                // console.log(statusPageData)
                 // console.log(statusPageData)
             } catch (error) {
                 console.error("Failed to get status from backend:", error);
