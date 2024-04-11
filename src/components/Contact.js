@@ -35,6 +35,7 @@ const Contact = () => {
         e.preventDefault();
         const data = new FormData(e.currentTarget);
         try {
+            console.log(data + " " + apiBaseUrl);
             const response = await axios.post(apiBaseUrl, data);
             console.log(response);
             if (language === "DE") {
