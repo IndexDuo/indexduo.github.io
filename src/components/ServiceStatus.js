@@ -15,6 +15,7 @@ const ServiceStatus = () => {
                 const response = await axios.get(`${apiUrl}/api/status`);
                 console.log(response.data);
                 const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
+                console.log(statusPageData)
                 setStatus(statusPageData);
                 console.log(statusPageData)
                 // console.log(statusPageData)
