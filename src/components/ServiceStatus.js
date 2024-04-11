@@ -14,7 +14,7 @@ const ServiceStatus = () => {
                 const apiUrl = 'https://www.indexduo.me'; // Fallback URL
                 const response = await axios.get(`${apiUrl}/api/status`);
                 console.log(response.data);
-                const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
+                const statusPageData = response.data.data[0].attributes.aggregate_state;
                 console.log(statusPageData)
                 setStatus(statusPageData);
                 console.log(statusPageData)
