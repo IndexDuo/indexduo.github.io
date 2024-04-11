@@ -75,7 +75,7 @@ const Contact = () => {
                             _jsx("button", { 
                                 type: "submit",
                                 disabled: state.submitting,
-                                style: { background: '#f09071', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '4px', cursor: 'pointer' },
+                                style: { background: '#ff6a3d', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '4px', cursor: 'pointer' },
                                 children: "Submit"
                             })
                         ]
