@@ -10,7 +10,7 @@ const ServiceStatus = () => {
   useEffect(() => {
       async function getStatusData() {
           try {
-              const response = await axios.get('/api/status');
+              const response = await axios.get('https://www.indexduo.me/api/status');
               const statusPageData = response.data.statusPages[0].attributes.aggregate_state;
               setStatus(statusPageData);
           } catch (error) {
