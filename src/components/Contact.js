@@ -11,7 +11,7 @@ import { useTheme } from "../context/theme-context";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
-    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+    const apiBaseUrl = import.meta.env.VITE_API_BASE_URL_Formspree || "";
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
