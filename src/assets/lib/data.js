@@ -128,7 +128,7 @@ export const projectsData = [{
     {
         title: "Event Countdown App",
         description: "",
-        description_EN: "A web application made with React-Native that allows the user to create a countdown for events and store the data locally. The user can also use it as a to-do list, but different from a to-do list, it tracks the countdown of upcoming events and to-do “items” and provides the user a visual representation of how much time is left until either an event occurs.",
+        description_EN: "A web application made with React-Native that allows the user to create a countdown for events and store the data locally. The user can also use it as a to-do list, but different from a to-do list, it tracks the countdown of the event. It provides the user a visual representation of how much time is left until either an event occurs or a to-do item is due.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
@@ -179,7 +179,7 @@ export const projectsData = [{
     {
         title: "Art Gallery Website",
         description: "",
-        description_EN: "A visually engaging website showcasing a collection of artworks. Designed to provide an immersive art gallery experience online.",
+        description_EN: "It is a simple art gallery website made with HTML and CSS. Media queries were used to make the website responsive (mobile and desktop).",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon }
