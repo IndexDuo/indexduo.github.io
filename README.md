@@ -60,5 +60,3 @@ Ensure all dependencies are installed with `npm install` before starting develop
 - Design & Animations: Framer-Motion, GSAP, React-Icons
 - Routing & Forms: React-Router-Dom, EmailJS
 - Other notable dependencies: Swiper, Web-Vitals, Prism-React-Renderer
-
-Developed with ❤️ by Jing.
