@@ -185,7 +185,7 @@ export const projectsData = [{
             { name: "CSS", icon: cssicon }
         ],
         image: gallery_mockup, // Replace this with the path to your project's screenshot
-        deploymenturl: "https://indexduo.me/ArtGalleryWebsite/",
+        deploymenturl: "https://art-gallery-website-5z5wy54wm-jing-li-projects.vercel.app/",
         githuburl: "https://github.com/IndexDuo/ArtGalleryWebsite", // Update this with the correct GitHub repository if available
         githubicon: FiGithub,
         deploymenticon: FiLink,
