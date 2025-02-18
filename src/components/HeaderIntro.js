@@ -63,15 +63,22 @@ const HeaderIntro = () => {
                                   href: button.externalUrl,
                                   target: "_blank",
                                   rel: "noopener noreferrer",
-                                  buttoncolor: button.color,
-                                  children: [
-                                      _jsx(button.icon, {
-                                          className: "text-xl",
-                                      }),
-                                      language === "DE"
-                                          ? button.label.de
-                                          : button.label.en,
-                                  ],
+                                  className: "no-underline",
+                                  children: _jsxs("button", {
+                                      className:
+                                          "text-white drop-shadow-2xl border-none py-4 px-8 rounded-lg text-[1.6rem] transition-all duration-200 flex flex-row gap-4 justify-center items-center cursor-pointer main-btn shadow-xl hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 w-max max-lg:text-3xl max-lg:py-8 max-lg:px-16 max-lg:rounded-xl",
+                                      children: [
+                                          _jsx(button.icon, {
+                                              className: "w-max h-10",
+                                          }),
+                                          _jsx("span", {
+                                              children:
+                                                  language === "DE"
+                                                      ? button.label.de
+                                                      : button.label.en,
+                                          }),
+                                      ],
+                                  }),
                               },
                               index
                           )
