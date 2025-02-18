@@ -43,7 +43,13 @@ import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import {
+    FiGithub,
+    FiLink,
+    FiLinkedin,
+    FiMail,
+    FiPenTool,
+} from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 export const headerIntroData = {
@@ -53,9 +59,17 @@ export const headerIntroData = {
     roles: [" Web Designer.", " UI/UX Designer.", " student.", "n orange."],
     subtitle: "Web Designer",
     description: {
-        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience. \n Visit the link below to see my design portfolio",
+        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience. Visit the link below to see my design portfolio",
     },
     buttons: [
+        {
+            name: "Design",
+            label: {
+                en: "Design Portfolio",
+            },
+            icon: FiPenTool,
+            color: "secondary-btn",
+        },
         {
             name: "Contact",
             label: {
