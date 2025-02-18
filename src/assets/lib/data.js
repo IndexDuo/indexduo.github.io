@@ -73,7 +73,7 @@ export const headerIntroData = {
             },
             icon: FiPenTool,
             color: "main-btn",
-            externalUrl: "https://jli10.myportfolio.com/",
+            externalUrl: "https://indexduo.myportfolio.com/",
         },
         // {
         //     name: "Contact",
