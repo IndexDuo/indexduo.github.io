@@ -52,32 +52,25 @@ const HeaderIntro = () => {
                         ? headerIntroData.description.de
                         : headerIntroData.description.en,
             }),
-            _jsxs("div", {
+            _jsx("div", {
                 className:
                     "button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center",
                 children: headerIntroData.buttons.map((button, index) =>
                     button.externalUrl
-                        ? _jsxs(
+                        ? _jsx(
                               "a",
                               {
                                   href: button.externalUrl,
                                   target: "_blank",
                                   rel: "noopener noreferrer",
                                   className: `flex items-center gap-2 px-6 py-3 rounded-md font-medium transition-transform transform hover:scale-105 ${button.color}`,
-                                  onClick: () => {
-                                      setActiveSection(button.name);
-                                      setTimeOfLastClick(Date.now());
-                                  },
                                   children: [
                                       _jsx(button.icon, {
                                           className: "text-xl",
                                       }),
-                                      _jsx("span", {
-                                          children:
-                                              language === "DE"
-                                                  ? button.label.de
-                                                  : button.label.en,
-                                      }),
+                                      language === "DE"
+                                          ? button.label.de
+                                          : button.label.en,
                                   ],
                               },
                               index
@@ -90,7 +83,7 @@ const HeaderIntro = () => {
                                           ? button.label.de
                                           : button.label.en,
                                   iconSVG: button.icon,
-                                  link: `#${button.name.toLowerCase()}`,
+                                  link: `#${button.name.toLocaleLowerCase()}`,
                                   buttoncolor: button.color,
                                   onClick: () => {
                                       setActiveSection(button.name);
