@@ -53,7 +53,7 @@ export const headerIntroData = {
     roles: [" Web Designer.", " UI/UX Designer.", " student.", "n orange."],
     subtitle: "Web Designer",
     description: {
-        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience. 123",
+        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience. \n Visit the link below to see my design portfolio",
     },
     buttons: [
         {
@@ -75,36 +75,41 @@ export const headerIntroData = {
     ],
     profilepicture: profilepicture,
 };
-export const projectsData = [{
-    title: "BiasGuessr",
-    description: "",
-    description_EN: "Guess the K-POP (or western) artists with your voice. A web app that allows users to a play a game of guess the celebrity. It uses voice recognition to detect the right spoken answer. There are two game modes, one for K-POP fans and one for those that aren't, which instead tests on western celebrities. Play the game using the demo link below. Mobile recommended!",
-    technologies: [{ name: "React", icon: reacticon },
-        { name: "Html", icon: htmlicon },
-        { name: "CSS", icon: cssicon },
-        { name: "JavaScript", icon: javascripticon },
-        { name: "REST Api", icon: apiicon },
-        { name: "node.js", icon: nodejsicon }, { name: "MongoDB", icon: mongodbicon },
-        {name:"postman", icon:postmanicon},
-        { name: "Express", icon: expressiconwhite },
-        { name: "Vercel", icon: vercelicon },
-    ],
-    image: biasguessr_mockup,
-    deploymenturl: "https://www.biasguessr.co/",
-    githuburl: "https://github.com/IndexDuo/WingHacks2024",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-        main: "main-btn",
-        second: "secondary-btn",
-        icon: "white",
-        projectcolor: "#70B9BE",
+export const projectsData = [
+    {
+        title: "BiasGuessr",
+        description: "",
+        description_EN:
+            "Guess the K-POP (or western) artists with your voice. A web app that allows users to a play a game of guess the celebrity. It uses voice recognition to detect the right spoken answer. There are two game modes, one for K-POP fans and one for those that aren't, which instead tests on western celebrities. Play the game using the demo link below. Mobile recommended!",
+        technologies: [
+            { name: "React", icon: reacticon },
+            { name: "Html", icon: htmlicon },
+            { name: "CSS", icon: cssicon },
+            { name: "JavaScript", icon: javascripticon },
+            { name: "REST Api", icon: apiicon },
+            { name: "node.js", icon: nodejsicon },
+            { name: "MongoDB", icon: mongodbicon },
+            { name: "postman", icon: postmanicon },
+            { name: "Express", icon: expressiconwhite },
+            { name: "Vercel", icon: vercelicon },
+        ],
+        image: biasguessr_mockup,
+        deploymenturl: "https://www.biasguessr.co/",
+        githuburl: "https://github.com/IndexDuo/WingHacks2024",
+        githubicon: FiGithub,
+        deploymenticon: FiLink,
+        colors: {
+            main: "main-btn",
+            second: "secondary-btn",
+            icon: "white",
+            projectcolor: "#70B9BE",
+        },
     },
-},
     {
         title: "FBI Most Wanted",
         description: "",
-        description_EN: "A web application that allows users to search for FBI's most wanted criminals. The app uses the FBI's public API to fetch the data and display it in a user-friendly way. The app is made at ShellHacks 2023.",
+        description_EN:
+            "A web application that allows users to search for FBI's most wanted criminals. The app uses the FBI's public API to fetch the data and display it in a user-friendly way. The app is made at ShellHacks 2023.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
@@ -128,7 +133,8 @@ export const projectsData = [{
     {
         title: "Event Countdown App",
         description: "",
-        description_EN: "A web application made with React-Native that allows the user to create a countdown for events and store the data locally. The user can also use it as a to-do list, but different from a to-do list, it tracks the countdown of the event. It provides the user a visual representation of how much time is left until either an event occurs or a to-do item is due.",
+        description_EN:
+            "A web application made with React-Native that allows the user to create a countdown for events and store the data locally. The user can also use it as a to-do list, but different from a to-do list, it tracks the countdown of the event. It provides the user a visual representation of how much time is left until either an event occurs or a to-do item is due.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
@@ -151,18 +157,19 @@ export const projectsData = [{
     {
         title: "Flotto",
         description: "",
-        description_EN: "A Florida Lottery web application that allows users to search for the latest lottery numbers and jackpot amounts. Data was extracted from the Florida Lottery's official website, stored in a MongoDB database, and displayed in a user-friendly way. The app is made at KnightHacks 2023.",
+        description_EN:
+            "A Florida Lottery web application that allows users to search for the latest lottery numbers and jackpot amounts. Data was extracted from the Florida Lottery's official website, stored in a MongoDB database, and displayed in a user-friendly way. The app is made at KnightHacks 2023.",
         technologies: [
             { name: "Html", icon: htmlicon },
             { name: "CSS", icon: cssicon },
             { name: "JavaScript", icon: javascripticon },
             { name: "MongoDB", icon: mongodbicon },
-            {name:"postman", icon:postmanicon},
+            { name: "postman", icon: postmanicon },
             { name: "Express", icon: expressiconwhite },
             { name: "Node.js", icon: nodejsicon },
             { name: "REST Api", icon: apiicon },
-            {name:"git", icon:giticon},
-            {name:"tailwindcss", icon:tailwindcssicon},
+            { name: "git", icon: giticon },
+            { name: "tailwindcss", icon: tailwindcssicon },
         ],
         image: flotto_mockup,
         // deploymenturl: "",
@@ -179,13 +186,15 @@ export const projectsData = [{
     {
         title: "Art Gallery Website",
         description: "",
-        description_EN: "It is a simple art gallery website made with HTML and CSS. Media queries were used to make the website responsive (mobile and desktop).",
+        description_EN:
+            "It is a simple art gallery website made with HTML and CSS. Media queries were used to make the website responsive (mobile and desktop).",
         technologies: [
             { name: "Html", icon: htmlicon },
-            { name: "CSS", icon: cssicon }
+            { name: "CSS", icon: cssicon },
         ],
         image: gallery_mockup, // Replace this with the path to your project's screenshot
-        deploymenturl: "https://art-gallery-website-5z5wy54wm-jing-li-projects.vercel.app/",
+        deploymenturl:
+            "https://art-gallery-website-5z5wy54wm-jing-li-projects.vercel.app/",
         githuburl: "https://github.com/IndexDuo/ArtGalleryWebsite", // Update this with the correct GitHub repository if available
         githubicon: FiGithub,
         deploymenticon: FiLink,
@@ -195,8 +204,7 @@ export const projectsData = [{
             icon: "white",
             projectcolor: "#Insert_Color_Theme_of_Your_Project_Here", // Optional: Replace this with your project's primary color theme
         },
-    }
-    
+    },
 ];
 export const liveTickerData = {
     content: {
@@ -274,7 +282,12 @@ export const skillsDataWeb = [
                 icon: [expressicon, expressiconwhite],
                 color: ["#000000", "#FFFFFF"],
             },
-            {title:"Postman", hash:"#Postman", icon:postmanicon, color:"#FF6C37"},
+            {
+                title: "Postman",
+                hash: "#Postman",
+                icon: postmanicon,
+                color: "#FF6C37",
+            },
             {
                 title: "SASS/SCSS",
                 hash: "#SASS/SCSS",
@@ -288,14 +301,24 @@ export const skillsDataDesign = [
     {
         skillsTitle: "Design",
         skills: [
-            { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
+            {
+                title: "Figma",
+                hash: "#Figma",
+                icon: figmaicon,
+                color: "#F24E1E",
+            },
             // {
             //     title: "Adobe XD",
             //     hash: "#Adobe XD",
             //     icon: adobexdicon,
             //     color: "#FF61F6",
             // },
-            { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+            {
+                title: "Canva",
+                hash: "#Canva",
+                icon: canvaicon,
+                color: "#00C4CC",
+            },
         ],
     },
 ];
@@ -332,8 +355,18 @@ export const navLinks = [
     { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ];
 export const FooterLinks = [
-    { de: "Impressum", en: "Imprint", hash: "#imprint", data: _jsx(Imprint, {}) },
-    { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: _jsx(Privacy, {}) },
+    {
+        de: "Impressum",
+        en: "Imprint",
+        hash: "#imprint",
+        data: _jsx(Imprint, {}),
+    },
+    {
+        de: "Datenschutz",
+        en: "Privacy",
+        hash: "#privacy",
+        data: _jsx(Privacy, {}),
+    },
 ];
 export const sideBarRightMail = {
     link: "mailto:jl.jing02123@gmail.com",
@@ -358,7 +391,7 @@ export const sideBarLeftSocials = [
 ];
 export const quotesData = [
     {
-        de: '',
+        de: "",
         en: `"Design isn't just what it looks like and feels like — design is how it works"`,
         author: "Steve Jobs, co-founder of Apple",
     },
@@ -393,17 +426,20 @@ export const aboutMeData = {
     paragraphs_EN: [
         {
             title: "Theme Parks Adventurer",
-            description: "I am a big fan of theme parks and roller coasters. I love the thrill of the ride and the adrenaline rush. I am always on the lookout for new parks and rides to experience.",
+            description:
+                "I am a big fan of theme parks and roller coasters. I love the thrill of the ride and the adrenaline rush. I am always on the lookout for new parks and rides to experience.",
             icon: hardwareicon,
         },
         {
             title: "Cat Lover",
-            description: "I am a cat lover and have a cat named Index. I was once a Nursery Care Technician at an animal shelter and have a lot of experience with taking care of new born kittens.",
+            description:
+                "I am a cat lover and have a cat named Index. I was once a Nursery Care Technician at an animal shelter and have a lot of experience with taking care of new born kittens.",
             icon: caricon,
         },
         {
             title: "Learner and Perfectionist",
-            description: "I am a learner and a perfectionist. I am always looking to improve my skills and learn new things. I am always looking for ways to improve my work and make it better.",
+            description:
+                "I am a learner and a perfectionist. I am always looking to improve my skills and learn new things. I am always looking for ways to improve my work and make it better.",
             icon: travelicon,
         },
     ],
