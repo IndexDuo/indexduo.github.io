@@ -53,7 +53,7 @@ export const headerIntroData = {
     roles: [" Web Designer.", " UI/UX Designer.", " student.", "n orange."],
     subtitle: "Web Designer",
     description: {
-        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience.",
+        en: "I specialize in crafting web experiences that balance aesthetic appeal with accessibility, usability, and user experience. 123",
     },
     buttons: [
         {
