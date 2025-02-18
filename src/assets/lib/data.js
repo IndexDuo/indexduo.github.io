@@ -69,16 +69,16 @@ export const headerIntroData = {
             },
             icon: FiPenTool,
             color: "main-btn",
-            externalUrl: "https://google.com",
+            externalUrl: "https://jli10.myportfolio.com/",
         },
-        {
-            name: "Contact",
-            label: {
-                en: "Contact me",
-            },
-            icon: FiMail,
-            color: "main-btn",
-        },
+        // {
+        //     name: "Contact",
+        //     label: {
+        //         en: "Contact me",
+        //     },
+        //     icon: FiMail,
+        //     color: "main-btn",
+        // },
         {
             name: "Projects",
             label: {
