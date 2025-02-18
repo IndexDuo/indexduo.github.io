@@ -52,6 +52,10 @@ import {
 } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
+import indesignicon from "../../assets/icons/indesignicon.svg";
+import photoshopicon from "../../assets/icons/photoshopicon.svg";
+import illustratoricon from "../../assets/icons/illustratoricon.svg";
+
 export const headerIntroData = {
     title: {
         en: "Hi, I'm Jing",
@@ -312,6 +316,8 @@ export const skillsDataWeb = [
         ],
     },
 ];
+
+
 export const skillsDataDesign = [
     {
         skillsTitle: "Design",
@@ -322,21 +328,34 @@ export const skillsDataDesign = [
                 icon: figmaicon,
                 color: "#F24E1E",
             },
-            // {
-            //     title: "Adobe XD",
-            //     hash: "#Adobe XD",
-            //     icon: adobexdicon,
-            //     color: "#FF61F6",
-            // },
             {
                 title: "Canva",
                 hash: "#Canva",
                 icon: canvaicon,
                 color: "#00C4CC",
             },
+            {
+                title: "Adobe InDesign",
+                hash: "#AdobeInDesign",
+                icon: indesignicon,
+                color: "#FF3366",
+            },
+            {
+                title: "Adobe Photoshop",
+                hash: "#AdobePhotoshop",
+                icon: photoshopicon,
+                color: "#31A8FF",
+            },
+            {
+                title: "Adobe Illustrator",
+                hash: "#AdobeIllustrator",
+                icon: illustratoricon,
+                color: "#FF9A00",
+            },
         ],
     },
 ];
+
 export const skillsDataCMS = [
     {
         skillsTitle: "CMS",
