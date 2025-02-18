@@ -69,6 +69,7 @@ export const headerIntroData = {
             },
             icon: FiPenTool,
             color: "secondary-btn",
+            externalUrl: "https://google.com"
         },
         {
             name: "Contact",
@@ -81,7 +82,7 @@ export const headerIntroData = {
         {
             name: "Projects",
             label: {
-                en: "My Projects",
+                en: "My Web Projects",
             },
             icon: FiGithub,
             color: "secondary-btn",
