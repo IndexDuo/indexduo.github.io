@@ -63,7 +63,7 @@ const HeaderIntro = () => {
                                   href: button.externalUrl,
                                   target: "_blank",
                                   rel: "noopener noreferrer",
-                                  className: `flex items-center gap-2 px-6 py-3 rounded-md font-medium transition-transform transform hover:scale-105 ${button.color}`,
+                                  buttoncolor: button.color,
                                   children: [
                                       _jsx(button.icon, {
                                           className: "text-xl",
