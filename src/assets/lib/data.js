@@ -68,8 +68,8 @@ export const headerIntroData = {
                 en: "Design Portfolio",
             },
             icon: FiPenTool,
-            color: "secondary-btn",
-            externalUrl: "https://google.com"
+            color: "main-btn",
+            externalUrl: "https://google.com",
         },
         {
             name: "Contact",

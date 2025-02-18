@@ -63,14 +63,16 @@ const HeaderIntro = () => {
                                   href: button.externalUrl,
                                   target: "_blank",
                                   rel: "noopener noreferrer",
-                                  className: `btn ${button.color} flex items-center justify-center gap-2 px-6 py-3 rounded-md text-white transition-transform transform hover:scale-105 shadow-md`,
+                                  className: `flex items-center gap-2 px-6 py-3 rounded-md font-medium transition-transform transform hover:scale-105 ${button.color}`,
+                                  onClick: () => {
+                                      setActiveSection(button.name);
+                                      setTimeOfLastClick(Date.now());
+                                  },
                                   children: [
-                                      button.icon &&
-                                          _jsx(button.icon, {
-                                              className: "text-xl",
-                                          }),
+                                      _jsx(button.icon, {
+                                          className: "text-xl",
+                                      }),
                                       _jsx("span", {
-                                          className: "font-medium",
                                           children:
                                               language === "DE"
                                                   ? button.label.de
